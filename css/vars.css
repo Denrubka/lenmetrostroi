@@ -1,0 +1,15 @@
+:root {
+    --text-black: #0F0F0F;
+    --text-blue: #0B65ED;
+    --text-white: #ffffff;
+    --text-dark-gray: #6B6B6B;
+
+    --fill-blue: #0058DC;
+    --fill-gray: #D6D6D6;
+    --fill-light-gray: #f2f2f2;
+
+    --button-blue: #0B65ED;
+    --button-light-blue: #46B1FF;
+    --button-gray: #D6D6D6;
+    --button-white: #ffffff;
+}
