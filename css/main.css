@@ -156,6 +156,9 @@
 .about__item:last-of-type {
     align-self: flex-end;
 }
+.projects {
+    overflow: hidden;
+}
 .projects .section__title {
     margin-bottom: 40px;
 }
@@ -258,6 +261,49 @@
 }
 .accordion__item.active .accordion__item-icon:last-of-type {
     display: block;
+}
+.map {
+    position: relative;
+    height: 1839px;
+    margin-bottom: 250px;
+    overflow: hidden;
+}
+.map__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.map__info-multiple {
+    color: var(--text-blue);
+}
+.map__info-numbers {
+    max-width: 1096px;
+}
+.map__info-numbers p {
+    font-size: 77px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.map__img {
+    position: absolute;
+    top: 175px;
+    transform: rotate(-12deg) translateX(186px);
+    z-index: -1;
+}
+.numbers__list {
+    display: flex;
+    justify-content: space-between;
+}
+.numbers__item {
+    display: flex;
+    flex-direction: column;
+}
+.numbers__item-title {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--text-blue);
 }
 .slider-wrapper {
     position: relative;
@@ -376,6 +422,51 @@ textarea.form__input {
 .form__button span {
     font-size: 14px;
     color: var(--text-dark-gray);
+}
+.footer {
+    background: var(--fill-blue);
+    color: var(--text-white);
+    padding: 60px 0 80px 0;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__logo {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.footer__contacts {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__copyright {
+    font-size: 14px;
+}
+.footer__nav-list {
+    display: flex;
+}
+.footer__nav-block {
+    width: 248px;
+    font-size: 16px;
+    letter-spacing: 0.48px;
+}
+.footer__nav-block:not(:last-of-type) {
+    margin-right: 40px;
+}
+.footer__nav-block ul li a {
+    display: block;
+    padding: 4px 0;
+}
+.footer__nav-title {
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    display: block;
 }
 
 @keyframes next-btn {
