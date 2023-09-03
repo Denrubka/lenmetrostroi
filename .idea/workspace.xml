@@ -2,10 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8edc075d-7adc-4d39-93b5-143941915220" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img/map1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Embankment.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Vector.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/donwload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flag.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-directions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/typography.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vars.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/vars.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/letters/letter1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/letters/letter1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/letters/letter2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/letters/letter2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/letters/letter3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/letters/letter3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/letters/letter4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/letters/letter4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/partners/president.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/partners/president.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/lahtacentr.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/lahtacentr.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -44,8 +58,13 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/projects/Lenmetstroi&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/projects/prosto&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -64,7 +83,12 @@
       <workItem from="1693217584826" duration="16688000" />
       <workItem from="1693243681829" duration="9708000" />
       <workItem from="1693314595586" duration="3965000" />
-      <workItem from="1693374729661" duration="2490000" />
+      <workItem from="1693374729661" duration="8307000" />
+      <workItem from="1693468251454" duration="28894000" />
+      <workItem from="1693646770803" duration="9099000" />
+      <workItem from="1693724592525" duration="6354000" />
+      <workItem from="1693734982284" duration="722000" />
+      <workItem from="1693735711126" duration="6240000" />
     </task>
     <servers />
   </component>
