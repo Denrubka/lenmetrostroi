@@ -269,7 +269,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px 0 20px;
 }
 .menu__footer .burger .burger__line, .menu__footer .burger .burger__line::before, .menu__footer .burger .burger__line::after {
     background: var(--text-black);
