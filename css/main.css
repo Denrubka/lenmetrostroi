@@ -516,7 +516,7 @@
     word-break: break-word;
 }
 .accordion__item-block .full-img {
-    margin: 50px 0;
+    margin: 50px auto;
 }
 .accordion__item-block .container, .project-info__wrapper {
     display: flex;
@@ -1320,7 +1320,7 @@
     margin-top: 180px;
 }
 .camera-full__list .full-img {
-    margin: 0;
+    margin: 0 auto;
 }
 .camera-full__list .full-img:not(:last-of-type) {
     margin-bottom: 120px;
@@ -1764,7 +1764,7 @@
         padding-left: 15px;
     }
     .accordion__item-block .full-img {
-        margin: 80px 0;
+        margin: 80px auto;
     }
     .projects-standard__slider .swiper-slide {
         margin-right: 30px;
@@ -2096,7 +2096,7 @@
         font-size: 16px;
     }
     .accordion__item-block .full-img {
-        margin: 50px 0;
+        margin: 50px auto;
     }
     .project-inner__title {
         font-size: 48px;
