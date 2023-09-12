@@ -8,14 +8,14 @@
     <link rel="preload" href="./fonts/manrope/manrope-v14-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/manrope/manrope-v14-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/manrope/manrope-v14-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <title>Ленметрострой | Направления</title>
+    <title>Ленметрострой | Проекты</title>
     <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body class="page page-inner page-directions">
+<body class="page page-inner page-projects">
 
 <header class="header">
     <div class="container">
@@ -70,422 +70,122 @@
     </div>
 </div>
 <main id="content">
-    <section class="section directions-projects">
-        <div class="projects__accordion accordion">
-            <ul class="accordion__list">
-                <li class="accordion__item active">
-                    <div class="accordion__item-head">
-                        <div class="container">
-                            <div class="accordion__item-head-wrapper">
-                                <h2 class="section__title accordion__item-title">Генеральные подрядчики</h2>
-                                <button type="button" class="accordion__item-toggle">
-                                    <svg width="26" height="12" class="accordion__item-icon">
-                                        <use xlink:href="#arrow-bottom"></use>
-                                    </svg>
-                                    <svg width="20" height="20" class="accordion__item-icon">
-                                        <use xlink:href="#close"></use>
-                                    </svg>
-                                </button>
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section__title">Проекты</h2>
+                <div class="view-switcher">
+                    <button class="active">Списком</button>
+                    <button>На карте</button>
+                </div>
+            </div>
+            <div class="chips">
+                <ul class="chips__list chips-type">
+                    <li class="chips__item">
+                        <button class="chips__btn">Гражданские объекты</button>
+                    </li>
+                    <li class="chips__item">
+                        <button class="chips__btn active">Промышленные объекты</button>
+                    </li>
+                    <li class="chips__item">
+                        <button class="chips__btn">Объекты инфраструктуры</button>
+                    </li>
+                    <li class="chips__item">
+                        <button class="chips__btn">Метрополитен</button>
+                    </li>
+                </ul>
+                <ul class="chips__list chips-status">
+                    <li class="chips__item">
+                        <button class="chips__btn">В процессе</button>
+                    </li>
+                    <li class="chips__item">
+                        <button class="chips__btn active">Завершен</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown__button" type="button">Выберите категорию
+                    <svg class="dropdown__arrow" width="15" height="15">
+                        <use xlink:href="#dropdown-arrow"></use>
+                    </svg>
+                </button>
+                <ul class="dropdown__list">
+                    <li class="dropdown__item" data-value="Гражданиские объекты">Гражданиские объекты</li>
+                    <li class="dropdown__item" data-value="Промышленные объекты">Промышленные объекты</li>
+                    <li class="dropdown__item" data-value="Объекты инфраструктуры">Объекты инфраструктуры</li>
+                    <li class="dropdown__item" data-value="Метрополитен">Метрополитен</li>
+                    <li class="dropdown__item" data-value="В процессе">В процессе</li>
+                    <li class="dropdown__item" data-value="Завершен">Завершен</li>
+                </ul>
+                <input class="dropdown__input" type="text" name="select-category" value="">
+            </div>
+            <div class="projects-standard__wrapper projects-standard__wrapper_mobile">
+                <div class="slider-wrapper">
+                    <div class="swiper slider projects__slider projects-standard__slider projects-standard__slider_mobile">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <article class="project project_standard">
+                                    <img src="./img/projects/apartment-standard.jpg" width="820" height="538" alt="Многоквартирный дом" class="project__img">
+                                    <h4 class="project__title">Многоквартирный дом</h4>
+                                    <p class="project__location">
+                                        <span>Место:</span>п. Вёшки, Мытищи
+                                    </p>
+                                    <p class="project__text">
+                                        Клубный многоквартирный дом «Малые Вёшки» — это современный 4-х подъездный дом класса комфорт +. Дом строят по технологии «монолит-кирпич». Количество этажей 4, высота потолков колеблется от 2,85 до 7,11 м. «Малые Вёшки» расположены в экологически благоприятной зоне — на границе с лесополосой. Закрытая территория и тихое место создают уют загородной жизни.
+                                    </p>
+                                    <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
+                                </article>
                             </div>
+
+                            <div class="swiper-slide">
+                                <article class="project project_standard">
+                                    <img src="./img/projects/temple-standard.jpg" width="820" height="538" alt="Храм Собора новомучеников и исповедников Санкт-Петербургских" class="project__img">
+                                    <h4 class="project__title">Храм Собора новомучеников и исповедников Санкт-Петербургских</h4>
+                                    <p class="project__location">
+                                        <span>Место:</span>п. Петро-Славянка
+                                    </p>
+                                    <p class="project__text">
+                                        Инициатором постройки храма стал приход Свято-Троицкого собора в Колпино. Под строительство администрация поселка отвела участок площадью 725 м2.  Каркас храма изготовлен из деревянного сруба — лес подготовили мастера лесхоза Тверской губернии. Сооружение построено в один этаж. По центру храма расположена колокольня. Церковь рассчитана на одномоментное посещение до 200 человек.
+                                    </p>
+                                    <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="project project_standard">
+                                    <img src="./img/projects/apartment-standard.jpg" width="820" height="538" alt="Многоквартирный дом" class="project__img">
+                                    <h4 class="project__title">Многоквартирный дом</h4>
+                                    <p class="project__location">
+                                        <span>Место:</span>п. Вёшки, Мытищи
+                                    </p>
+                                    <p class="project__text">
+                                        Клубный многоквартирный дом «Малые Вёшки» — это современный 4-х подъездный дом класса комфорт +. Дом строят по технологии «монолит-кирпич». Количество этажей 4, высота потолков колеблется от 2,85 до 7,11 м. «Малые Вёшки» расположены в экологически благоприятной зоне — на границе с лесополосой. Закрытая территория и тихое место создают уют загородной жизни.
+                                    </p>
+                                    <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="project project_standard">
+                                    <img src="./img/projects/apartment-standard.jpg" width="820" height="538" alt="Многоквартирный дом" class="project__img">
+                                    <h4 class="project__title">Многоквартирный дом</h4>
+                                    <p class="project__location">
+                                        <span>Место:</span>п. Вёшки, Мытищи
+                                    </p>
+                                    <p class="project__text">
+                                        Клубный многоквартирный дом «Малые Вёшки» — это современный 4-х подъездный дом класса комфорт +. Дом строят по технологии «монолит-кирпич». Количество этажей 4, высота потолков колеблется от 2,85 до 7,11 м. «Малые Вёшки» расположены в экологически благоприятной зоне — на границе с лесополосой. Закрытая территория и тихое место создают уют загородной жизни.
+                                    </p>
+                                    <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
+                                </article>
+                            </div>
+
                         </div>
+
                     </div>
-                    <div class="accordion__item-block">
-                        <img src="./img/directions/general.jpg" width="1920" height="750" class="full-img" alt="Генеральные подрядчики">
-                        <div class="container project-info__wrapper">
-                            <div class="projects__desc">
-                                <p>«Ленметрострой», выступая в качестве генерального подрядчика, предоставляет полный спектр услуг по управлению строительством объектов любой сложности и масштаба. Она берет на себя ответственность за выполнение всех этапов строительства, начиная от разработки проектной документации и заканчивая сдачей объекта в эксплуатацию.</p>
-                            </div>
-                            <div class="projects__info">
-                                <p>
-                                    Основные услуги, предлагаемые генеральным подрядчиком, включают в себя:
-                                </p>
-
-                                <ul>
-                                    <li>
-                                        Разработка проектной документации и сметной документации.
-                                    </li>
-                                    <li>
-                                        Подбор подрядчиков и поставщиков материалов.
-                                    </li>
-                                    <li>
-                                        Организация и координация всех этапов строительства, включая закупку материалов, проведение работ и контроль качества.
-                                    </li>
-                                    <li>
-                                        Управление бюджетом проекта и контроль за соблюдением сроков выполнения работ.
-                                    </li>
-                                    <li>
-                                        Контроль за соблюдением требований по безопасности труда и экологических норм.
-                                    </li>
-                                    <li>
-                                        Проведение необходимых испытаний и проверок качества выполненных работ.
-                                    </li>
-                                    <li>
-                                        Сдача объекта в эксплуатацию и оказание послегарантийного обслуживания.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="container projects-standard__wrapper">
-                            <div class="slider__head">
-                                <h2 class="section__title">Проекты</h2>
-                                <div class="slider-buttons">
-                                    <div class="swiper-button-prev">
-                                        <svg width="26" height="12">
-                                            <use xlink:href="#arrow-bottom"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="swiper-button-next">
-                                        <svg width="26" height="12">
-                                            <use xlink:href="#arrow-bottom"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-wrapper">
-                                <div class="swiper slider projects__slider projects-standard__slider projects-standard__slider_pc">
-
-                                    <div class="swiper-wrapper">
-
-                                        <div class="swiper-slide">
-                                            <article class="project project_standard">
-                                                <img src="./img/projects/apartment-standard.jpg" width="820" height="538" alt="Многоквартирный дом" class="project__img">
-                                                <h4 class="project__title">Многоквартирный дом</h4>
-                                                <p class="project__location">
-                                                    <span>Место:</span>п. Вёшки, Мытищи
-                                                </p>
-                                                <p class="project__text">
-                                                    Клубный многоквартирный дом «Малые Вёшки» — это современный 4-х подъездный дом класса комфорт +. Дом строят по технологии «монолит-кирпич». Количество этажей 4, высота потолков колеблется от 2,85 до 7,11 м. «Малые Вёшки» расположены в экологически благоприятной зоне — на границе с лесополосой. Закрытая территория и тихое место создают уют загородной жизни.
-                                                </p>
-                                                <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
-                                            </article>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <article class="project project_standard">
-                                                <img src="./img/projects/temple-standard.jpg" width="820" height="538" alt="Храм Собора новомучеников и исповедников Санкт-Петербургских" class="project__img">
-                                                <h4 class="project__title">Храм Собора новомучеников и исповедников Санкт-Петербургских</h4>
-                                                <p class="project__location">
-                                                    <span>Место:</span>п. Петро-Славянка
-                                                </p>
-                                                <p class="project__text">
-                                                    Инициатором постройки храма стал приход Свято-Троицкого собора в Колпино. Под строительство администрация поселка отвела участок площадью 725 м2.  Каркас храма изготовлен из деревянного сруба — лес подготовили мастера лесхоза Тверской губернии. Сооружение построено в один этаж. По центру храма расположена колокольня. Церковь рассчитана на одномоментное посещение до 200 человек.
-                                                </p>
-                                                <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
-                                            </article>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <article class="project project_standard">
-                                                <img src="./img/projects/apartment-standard.jpg" width="820" height="538" alt="Многоквартирный дом" class="project__img">
-                                                <h4 class="project__title">Многоквартирный дом</h4>
-                                                <p class="project__location">
-                                                    <span>Место:</span>п. Вёшки, Мытищи
-                                                </p>
-                                                <p class="project__text">
-                                                    Клубный многоквартирный дом «Малые Вёшки» — это современный 4-х подъездный дом класса комфорт +. Дом строят по технологии «монолит-кирпич». Количество этажей 4, высота потолков колеблется от 2,85 до 7,11 м. «Малые Вёшки» расположены в экологически благоприятной зоне — на границе с лесополосой. Закрытая территория и тихое место создают уют загородной жизни.
-                                                </p>
-                                                <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
-                                            </article>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="accordion__item active">
-                    <div class="accordion__item-head">
-                        <div class="container">
-                            <div class="accordion__item-head-wrapper">
-                                <h2 class="section__title accordion__item-title">Проектирование</h2>
-                                <button type="button" class="accordion__item-toggle">
-                                    <svg width="26" height="12" class="accordion__item-icon">
-                                        <use xlink:href="#arrow-bottom"></use>
-                                    </svg>
-                                    <svg width="20" height="20" class="accordion__item-icon">
-                                        <use xlink:href="#close"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item-block">
-                        <img src="./img/directions/design.jpg" width="1920" height="750" class="full-img" alt="Генеральные подрядчики">
-                        <div class="container project-info__wrapper">
-                            <div class="projects__desc">
-                                <p>«Ленметрострой» предлагает широкий спектр услуг в области проектирования строительных объектов.</p>
-                                <p>«Ленметрострой» имеет опыт и квалификацию для выполнения проектов любой сложности, начиная от небольших частных домов до крупных коммерческих объектов. Мы также обладаем современным оборудованием и используем последние технологии в проектировании.
-                                    Изготовление металлоконструкци</p>
-                            </div>
-                            <div class="projects__info">
-                                <ul>
-                                    <li>
-                                        Архитектурное проектирование — разработка концепции здания, планирование помещений, проработка фасадов и интерьеров.
-                                    </li>
-                                    <li>
-                                        Конструктивное проектирование — проектирование несущих конструкций здания, расчеты на прочность и устойчивость.
-                                    </li>
-                                    <li>
-                                       Инженерное проектирование — проектирование систем отопления, вентиляции, кондиционирования, электроснабжения, водоснабжения и канализации.
-                                    </li>
-                                    <li>
-                                        Проектирование инженерных сетей — проектирование систем газоснабжения, теплоснабжения, электроснабжения, водоснабжения и канализации.
-                                    </li>
-                                    <li>
-                                        Проектирование малых архитектурных форм — проектирование элементов благоустройства территории, таких как заборы, ограждения, беседки, скамейки, фонари и т.д.
-                                    </li>
-                                    <li>
-                                        Комплексное проектирование — разработка проекта здания с учетом всех вышеуказанных аспектов.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="accordion__item active">
-                    <div class="accordion__item-head">
-                        <div class="container">
-                            <div class="accordion__item-head-wrapper">
-                                <h2 class="section__title accordion__item-title">Изготовление металлоконструкций любой сложности</h2>
-                                <button type="button" class="accordion__item-toggle">
-                                    <svg width="26" height="12" class="accordion__item-icon">
-                                        <use xlink:href="#arrow-bottom"></use>
-                                    </svg>
-                                    <svg width="20" height="20" class="accordion__item-icon">
-                                        <use xlink:href="#close"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item-block">
-                        <img src="./img/directions/metal.jpg" width="1920" height="750" class="full-img" alt="Генеральные подрядчики">
-                        <div class="container project-info__wrapper">
-                            <div class="projects__desc">
-                                <p>Мы производим металлоконструкции для промышленных, гражданских и жилых объектов, а также для объектов инфраструктуры. </p>
-                                <p>«Ленметрострой» имеет большой опыт работы в области изготовления металлоконструкций и готова предложить свои услуги как для крупных, так и для малых заказчиков. Мы гарантируем высокое качество работ и выполнение заказов в срок.</p>
-                            </div>
-                            <div class="projects__info">
-                                <ul>
-                                    <li>
-                                        Проектирование металлоконструкций с учетом требований заказчика и нормативных документов.
-                                    </li>
-                                    <li>
-                                        Изготовление металлоконструкций из различных материалов: сталь, алюминий, нержавеющая сталь и др. В нашей производственной базе есть все необходимое оборудование для изготовления металлоконструкций любой сложности.
-                                    </li>
-                                    <li>
-                                        Монтаж металлоконструкций на объектах любой сложности. Мы работаем с профессиональными монтажными бригадами, которые имеют большой опыт работы.
-                                    </li>
-                                    <li>
-                                        Ремонт и модернизация металлоконструкций любой сложности. Наши специалисты проводят диагностику и оценку технического состояния конструкции, а также разрабатывают проекты по ее модернизации
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="container projects-standard__wrapper">
-                            <div class="slider__head">
-                                <h2 class="section__title">Проекты</h2>
-                                <div class="slider-buttons">
-                                    <div class="swiper-button-prev">
-                                        <svg width="26" height="12">
-                                            <use xlink:href="#arrow-bottom"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="swiper-button-next">
-                                        <svg width="26" height="12">
-                                            <use xlink:href="#arrow-bottom"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-wrapper">
-                                <div class="swiper slider projects__slider projects-standard__slider">
-
-                                    <div class="swiper-wrapper">
-
-                                        <div class="swiper-slide">
-                                            <article class="project project_standard">
-                                                <img src="./img/projects/trout-farm-standard.jpg" width="820" height="538" alt="Форелевая ферма в г. Ардон" class="project__img">
-                                                <h4 class="project__title">Форелевая ферма в г. Ардон</h4>
-                                                <p class="project__location">
-                                                    <span>Место:</span>г. Ардон
-                                                </p>
-                                                <p class="project__text">
-                                                    В начале 2021 года к нам обратилась компания ООО «ОСТРОВ». Её основной вид деятельности — пресноводное рыболовство в промышленных масштабах. Компания выращивает и реализует малька и взрослую форель. Для увеличения производства и улучшения качества жизнеобеспечения рыбы требовались дополнительные мощности.
-                                                </p>
-                                                <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
-                                            </article>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <article class="project project_standard">
-                                                <img src="./img/projects/military-standard.jpg" width="820" height="538" alt="Строительство военной инфраструктуры Северо-Западного военного округа" class="project__img">
-                                                <h4 class="project__title">Строительство военной инфраструктуры Северо-Западного военного округа</h4>
-                                                <p class="project__location">
-                                                    <span>Место:</span>Северо-Западный военный округ
-                                                </p>
-                                                <p class="project__text">
-                                                    В гарнизоне Северо-Западного военного округа требовалось возвести одноэтажное горизонтальное здание. Всего 3,5 месяца потребовалось для выполнения срочного контракта с Министерством Обороны. За это время был подготовлен и утвержден проект. После согласования и допуска к объекту — выполнен комплекс строительно-монтажных работ по возведению железобетонного здания малой этажности.
-                                                </p>
-                                                <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
-                                            </article>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="accordion__item active">
-                    <div class="accordion__item-head">
-                        <div class="container">
-                            <div class="accordion__item-head-wrapper">
-                                <h2 class="section__title accordion__item-title">Гражданские и жилищные объекты</h2>
-                                <button type="button" class="accordion__item-toggle">
-                                    <svg width="26" height="12" class="accordion__item-icon">
-                                        <use xlink:href="#arrow-bottom"></use>
-                                    </svg>
-                                    <svg width="20" height="20" class="accordion__item-icon">
-                                        <use xlink:href="#close"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item-block">
-                        <img src="./img/directions/civil-objects.jpg" width="1920" height="750" class="full-img" alt="Генеральные подрядчики">
-                        <div class="container project-info__wrapper">
-                            <div class="projects__desc">
-                                <p>Компания «Ленметрострой» предлагает широкий спектр услуг в области строительства гражданских и жилых объектов.</p>
-                                <p>Мы гарантируем высокое качество работ, соблюдение сроков и индивидуальный подход к каждому клиенту.</p>
-                            </div>
-                            <div class="projects__info">
-                                <ul>
-                                    <li>
-                                        Проектирование — разработка проектной документации на основе требований заказчика и с учетом всех норм и правил.
-                                    </li>
-                                    <li>
-                                        Строительство — возведение зданий и сооружений любой сложности с применением современных технологий и материалов.
-                                    </li>
-                                    <li>
-                                        Реконструкция — модернизация уже существующих объектов с целью улучшения их функциональных характеристик.
-                                    </li>
-                                    <li>
-                                        Капитальный ремонт — проведение работ по замене изношенных конструкций и элементов здания с целью продления его срока службы.
-                                    </li>
-                                    <li>
-                                        Инженерные системы — проектирование и монтаж инженерных систем – отопления, вентиляции, кондиционирования, электроснабжения, водоснабжения и канализации.
-                                    </li>
-                                    <li>
-                                        Отделочные работы — проведение работ по отделке помещений – укладка напольных покрытий, установка дверей и окон, покраска стен и потолков.
-                                    </li>
-                                    <li>
-                                        Ландшафтный дизайн — озеленение территории вокруг здания, создание комфортных условий для проживания и отдыха.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="container projects-standard__wrapper">
-                            <div class="slider__head">
-                                <h2 class="section__title">Проекты</h2>
-                                <div class="slider-buttons">
-                                    <div class="swiper-button-prev">
-                                        <svg width="26" height="12">
-                                            <use xlink:href="#arrow-bottom"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="swiper-button-next">
-                                        <svg width="26" height="12">
-                                            <use xlink:href="#arrow-bottom"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-wrapper">
-                                <div class="swiper slider projects__slider projects-standard__slider">
-
-                                    <div class="swiper-wrapper">
-
-                                        <div class="swiper-slide">
-                                            <article class="project project_standard">
-                                                <img src="./img/projects/apartment-standard.jpg" width="820" height="538" alt="Многоквартирный дом" class="project__img">
-                                                <h4 class="project__title">Многоквартирный дом</h4>
-                                                <p class="project__location">
-                                                    <span>Место:</span>п. Вёшки, Мытищи
-                                                </p>
-                                                <p class="project__text">
-                                                    Клубный многоквартирный дом «Малые Вёшки» — это современный 4-х подъездный дом класса комфорт +. Дом строят по технологии «монолит-кирпич». Количество этажей 4, высота потолков колеблется от 2,85 до 7,11 м. «Малые Вёшки» расположены в экологически благоприятной зоне — на границе с лесополосой. Закрытая территория и тихое место создают уют загородной жизни.
-                                                </p>
-                                                <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
-                                            </article>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <article class="project project_standard">
-                                                <img src="./img/projects/rublevo-uspenski-standard.jpg" width="820" height="538" alt="Оздоровительный комплекс 'Рублево-Успенский' Управления делами Президента РФ" class="project__img">
-                                                <h4 class="project__title">Оздоровительный комплекс 'Рублево-Успенский' Управления делами Президента РФ</h4>
-                                                <p class="project__location">
-                                                    <span>Место:</span>Рублево-Успенский
-                                                </p>
-                                                <p class="project__text">
-                                                    Оздоровительный комплекс «Рублево-Успенский» — это обширная территория западного Подмосковья. Представляет собой совокупность поселков-таунхаусов, оздоровительных комплексов, усадеб с вековой историей и дачных комплексов, пансионат «Петрово-Дальнее».
-                                                </p>
-                                                <a href="#!" class="btn btn_secondary project__btn">Подробнее о проекте</a>
-                                            </article>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="accordion__item active">
-                    <div class="accordion__item-head">
-                        <div class="container">
-                            <div class="accordion__item-head-wrapper">
-                                <h2 class="section__title accordion__item-title">Нефтегазовая промышленность и энергетика</h2>
-                                <button type="button" class="accordion__item-toggle">
-                                    <svg width="26" height="12" class="accordion__item-icon">
-                                        <use xlink:href="#arrow-bottom"></use>
-                                    </svg>
-                                    <svg width="20" height="20" class="accordion__item-icon">
-                                        <use xlink:href="#close"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item-block">
-                        <img src="./img/directions/oil-and-gas.jpg" width="1920" height="750" class="full-img" alt="Генеральные подрядчики">
-                        <div class="container project-info__wrapper">
-                            <div class="projects__desc">
-                                <p>Компания «Ленметрострой» предоставляет широкий спектр строительных услуг для объектов нефтегазовой промышленности и энергетики
-                                </p>
-                                <p> Наши сотрудники участвовали в возведении главного атомного реактора АЭС-2 с 2010 до 2012 года, также в составе компании «Ленметрострой» мы сотрудничаем с такими энергетическими компаниями, как «Газпром» и «Роснефть».</p>
-                            </div>
-                            <div class="projects__info">
-                                <ul>
-                                    <li>
-                                        Строительство нефтеперерабатывающих заводов и комплексов. Мы имеем опыт в возведении объектов различной сложности, начиная от небольших заводов до крупных производственных комплексов.
-                                    </li>
-                                    <li>
-                                        Строительство электростанций и подстанций. Мы предоставляем полный цикл работ, начиная от проектирования и заканчивая монтажом оборудования.
-                                    </li>
-                                    <li>
-                                        Ремонт и модернизация нефтегазовых объектов. Наша компания может провести полный комплекс работ по ремонту и модернизации нефтегазовых объектов, включая замену оборудования, ремонт трубопроводов и т.д.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -768,12 +468,15 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1221.97 397.202C1226.88 396.295 1227.87 394.713 1233.11 394.904C1235.01 397.536 1233.89 396.459 1234.54 398.075L1235.41 400.523C1239.4 397.277 1238.04 396.111 1241.5 392.926C1248.12 392.872 1247.77 395.756 1251.54 398.013C1253.96 399.459 1254.63 398.845 1257.43 400.236C1259.57 401.307 1259.57 402.037 1261.58 402.978C1266.41 405.242 1282.32 406.558 1288.25 405.965C1301.71 404.614 1301.64 399.111 1309.41 397.625C1333.19 393.076 1335.46 418.975 1323.22 428.57C1306.67 441.54 1311.67 434.632 1303.91 432.805C1300.16 431.918 1296.32 434.687 1291.77 435.205L1252.43 438.56C1251.96 435.914 1252.6 433.568 1251.47 431.789C1240.19 442.495 1240.58 431.632 1229.95 437.496C1216.38 444.977 1222.93 445.141 1210.13 439.147L1206.07 445.829C1203.24 448.161 1201.34 447.848 1198.43 446.798C1195.74 449.955 1198.53 449.109 1194.05 451.141C1190.5 449.334 1190.52 448.905 1188.31 446.586C1187.23 448.427 1185.91 452.764 1185.01 455.028L1177.53 454.326C1177.4 462.325 1177.3 463.368 1170.46 463.293C1163.5 463.218 1166.88 467.255 1158.73 464.875C1158.06 471.251 1157.24 475.295 1149.73 474.149C1149.41 477.934 1148.5 479.864 1146.26 481.357C1143.23 483.389 1144.33 482.1 1142.66 482.325C1134.21 483.444 1135.24 491.893 1125.32 484.364C1127.43 487.76 1127.36 486.035 1127.09 490.979C1124.37 492.684 1123.12 492.049 1121.45 493.325L1111.36 503.56C1107.26 503.485 1108.31 503.806 1105.76 501.91C1103.83 508.347 1103.95 507.188 1099.41 510.222C1093.95 513.871 1096.22 513.864 1092.53 518.269C1079.41 533.926 1075.48 535.556 1076.83 562.416C1077.82 582.396 1086.1 580.207 1079.94 586.154C1075.27 590.668 1068.88 585.595 1065.5 582.887C1063.16 581.012 1064.96 581.694 1062.3 581.189C1047.64 578.4 1056.3 578.114 1051.65 568.178C1051.49 568.417 1051.37 568.799 1051.29 568.963L1049.07 572.57C1042.34 578.148 1042.96 564.721 1042.95 564.667C1041.96 560.712 1041.09 566.869 1034.31 555.604C1031.55 551.021 1028.85 552.583 1029.03 545.362L1043.19 541.256C1038.36 537.029 1040.49 533.524 1042.6 527.911C1040.26 524.14 1038.29 526.377 1038 518.174C1037.99 517.88 1037.97 517.737 1037.87 517.553C1033.96 517.99 1029.24 523.295 1027.46 516.326C1026.94 514.259 1030.98 488.797 1048.72 488.722L1051.65 494.914C1070.32 482.973 1062.76 482.189 1066.57 472.888C1072.57 471.79 1074.66 472.629 1080.38 473.147C1084.53 459.488 1089.4 461.745 1094.24 464.677C1098.25 467.112 1105.11 471.428 1109.46 471.64C1104.12 467.426 1104.67 462.795 1109.25 457.797C1109.38 457.647 1109.81 457.572 1109.91 457.156C1110.02 456.733 1110.39 456.74 1110.6 456.515C1103.32 452.355 1110.41 443.736 1116.06 442.713C1118.7 442.229 1118.95 442.815 1121.34 442.345C1127.63 441.117 1124.21 437.68 1134.32 440.313C1135.62 437.933 1133.47 439.685 1135.36 437.026C1137.79 433.623 1136.61 436.276 1138.96 433.828C1142.55 430.104 1139.46 429.32 1147.14 429.525C1147.82 421.308 1148.39 421.437 1154.01 419.044C1157.66 417.489 1154.54 419.719 1157.74 417.107C1158.4 416.125 1156.91 400.093 1169.32 399.2L1173.35 407.301C1177.98 406.551 1177.57 404.567 1181.9 405.671C1184.98 406.462 1184.54 407.724 1189.45 408.556C1193.22 403.353 1191.87 404.573 1198.5 402.841C1203.11 401.634 1203.81 399.323 1208.05 398.211C1212.54 397.038 1217.39 398.034 1221.96 397.188L1221.97 397.202ZM950.006 554.942C953.272 557.527 952.536 561.53 952.338 566.105C951.54 585.09 949.583 577.582 936.538 582.853C926.725 586.822 922.866 576.055 923.213 568.11C926.466 564.939 928.335 564.394 929.685 558.816C933.081 544.85 949.876 554.84 950.006 554.942ZM1297.21 547.407C1282.88 537.731 1269.22 550.844 1277.4 566.228C1283.46 568.253 1293.18 570.238 1297.92 566.31C1301 560.555 1298.44 560.527 1295.35 556.77C1296.29 553.095 1297.52 552.106 1297.21 547.414V547.407ZM1322.46 573.743C1321.02 576.812 1315.29 587.606 1322.82 589.093C1324.18 589.359 1334.41 587.027 1335.51 579.594C1333.08 575.291 1328.12 573.559 1322.46 573.743ZM1340.09 570.408C1340.27 561.809 1351.72 558.993 1354.28 566.494C1357.5 575.925 1344.53 575.216 1340.09 570.408ZM1084.96 600.522C1088.99 601.197 1093.67 615.537 1093.83 616.54C1094.99 623.993 1096.41 633.09 1094.37 639.534C1091.39 640.08 1086.18 639.254 1082.69 638.116C1077.76 636.506 1077.4 634.174 1078.09 627.839C1070.81 622.493 1071.63 620.809 1072.33 609.462C1074.91 606.85 1076.15 607 1078.74 604.361C1081.91 601.122 1079.06 601.776 1084.96 600.529V600.522ZM1344.33 617.495C1344.98 616.131 1352.27 606.911 1358.18 607.177C1365.58 607.511 1370.95 609.905 1370.7 617.522C1364.84 620.665 1346.96 627.526 1344.33 617.488V617.495ZM1374.64 609.202C1377.23 612.087 1379.52 614.951 1384.59 613.055C1384.79 612.803 1385.08 612.107 1385.14 612.271L1386.24 608.371C1386.36 606.979 1386.11 604.45 1386.21 602.69C1386.45 598.005 1387.11 596.798 1386.25 591.93C1377.97 591.752 1366.83 600.481 1374.64 609.216V609.202Z" fill="#D6D6D6"></path>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M2052.65 325.798C2058.42 315.638 2065.83 327.21 2076.03 326.855C2086.46 326.494 2094.17 320.548 2097.91 332.774C2099.84 339.116 2110.96 349.12 2104.39 355.237C2101.04 358.36 2080.42 355.353 2077.2 353.341C2075.23 350.92 2071.37 339.287 2070.66 336L2063.57 334.166C2070.64 338.407 2069.36 348.343 2072.42 354.609C2074.89 357.385 2096.43 359.062 2097.16 359.853C2099.19 364.518 2098.25 362.608 2096.31 366.611C2092.29 374.876 2094.44 378.101 2082.35 373.723C2082.39 382.745 2079.63 382.963 2078.54 390.192C2077.33 398.204 2077.79 398.716 2073.67 400.53L2070.06 401.593C2070.47 411.904 2069.12 411.072 2059.69 411.781C2047.99 412.661 2050.27 408.665 2044.6 407.055C2040.85 405.999 2033.31 407.724 2030.74 401.989C2028.3 396.547 2031.73 397.768 2030.19 394.29C2028.99 391.583 2028.3 393.588 2024.21 392.64C2023.16 389.408 2020.13 384.6 2020.29 382.179C2020.67 376.233 2021.1 382.622 2021.59 377.406C2021.69 376.383 2021.03 351.254 2028.52 348.465C2039.77 344.272 2045.02 341.353 2046.49 350.872L2052.71 351.97C2048.39 330.408 2050.22 333.784 2057.67 330.647C2053.96 328.717 2054.4 329.433 2052.66 325.798H2052.65ZM2128.87 305.846C2122.23 307.209 2123.83 313.108 2114.05 315.563C2110.07 316.565 2107.5 316.02 2107.14 320.179C2106.66 325.723 2110.58 323.378 2113.33 326.364C2116.64 329.945 2112.68 331.547 2117.7 333.415C2119.84 334.213 2124 333.716 2128.53 335.332C2143.4 340.63 2138.62 334.138 2146.58 334.813C2150.63 335.154 2153.72 337.493 2161.28 326.071C2173.69 307.325 2160.49 295.501 2149.17 302.382C2144.99 304.925 2148.09 305.15 2140.92 305.777C2136.71 306.146 2132.56 305.089 2128.87 305.846H2128.87ZM1621.57 310.517C1628.23 315.986 1625.27 310.517 1628.97 315.802C1631.47 319.375 1633.35 324.428 1632.81 329.235C1631.85 337.848 1627.73 332.018 1631.09 341.257C1633.76 348.615 1628.9 350.538 1628.89 350.525C1628.8 350.327 1628.44 350.852 1628.27 351.07C1630.64 354.93 1632.06 366.236 1626.25 369.905C1623.31 371.76 1620.12 371.439 1616.65 370.491C1607.84 368.091 1613.31 370.348 1606.54 370.273C1597.74 359.021 1605.63 366.829 1588.41 360.194C1578.49 356.369 1586.41 364.961 1577.57 353.416C1573.79 348.486 1573.58 348.738 1574.71 340.494C1561.04 341.353 1566.55 334.056 1570.63 329.147C1575.47 323.31 1573.3 327.217 1577.78 323.65C1584.55 318.25 1574.92 316.395 1599.24 309.508C1606.68 307.4 1608.51 304.025 1613 312.515L1615.83 310.087C1618.1 308.485 1615.31 309.61 1618.97 308.41C1622.41 310.196 1620.03 309.255 1621.56 310.51L1621.57 310.517ZM1599.26 268.559C1594.46 263.11 1597.68 253.754 1587.98 256.802C1583.48 258.214 1583.43 259.005 1582.74 264.262C1581.62 272.793 1583.12 270.427 1576.54 270.898C1567.53 271.532 1574.05 270.597 1569.18 276.005C1567.38 277.996 1563.89 279.251 1561.81 281.024C1562.26 288.784 1564.23 281.617 1563.52 289.009C1557.81 292.078 1560.74 284.897 1555.44 294.41C1552.99 298.829 1550.86 299.286 1551.86 305.621C1554.07 305.996 1559.17 304.42 1567.92 311.328C1574.02 316.143 1575.64 319.048 1582.9 312.733C1591.17 305.532 1591.8 310.701 1600.82 306.5C1609.86 302.286 1606.28 298.836 1605.63 290.203C1610.31 286.186 1613.12 288.511 1612.9 280.008C1607.3 275.05 1609.28 279.94 1599.26 268.559ZM1651.13 336.341L1648.94 341.735L1643.15 341.633C1637.14 360.453 1633.12 357.678 1636.4 364.859C1631.73 367.777 1630.67 366.372 1630.67 374.01C1630.67 392.572 1616.65 388.473 1624.21 404.389C1631.17 419.016 1637.97 395.688 1646.79 394.017C1657.36 392.012 1664.11 393.301 1675.7 386.073C1684.74 380.427 1686.39 375.96 1682.35 363.433C1680.8 358.639 1677.15 357.739 1673.34 354.153C1668.59 349.679 1670.32 346.651 1661.62 347.633C1661.3 340.18 1658.75 335.775 1651.13 336.355V336.341ZM1558.49 309.289C1547.24 305.989 1549.98 311.499 1547.68 316.531C1546.42 319.3 1546.31 316.374 1545.82 321.114C1548.88 323.432 1550.87 322.382 1553.45 323.514C1553.23 323.698 1552.84 323.623 1552.72 323.971C1552.61 324.319 1552.15 324.312 1551.99 324.401C1547.35 326.978 1546.68 325.819 1547.78 330.081C1548.62 333.368 1552.37 334.145 1556.36 333.272C1569.63 330.367 1579.75 315.529 1558.49 309.296V309.289ZM1548.92 256.993C1556.29 253.195 1569.62 255.916 1566.97 266.942C1565.15 267.843 1556.27 270.597 1554.66 270.652C1549.79 268.218 1546.56 263.499 1548.92 256.993ZM2098.85 412.013C2097.09 405.317 2097.95 404.144 2089.66 405.167C2074.43 428.611 2100.76 425.181 2100.76 425.181C2103.29 418.43 2100.38 417.843 2098.85 412.013ZM2053.75 446.879C2056.98 450.834 2060.28 454.912 2058.48 459.815C2050.98 462.059 2041.16 453.003 2035.92 449.102C2036.11 444.915 2036.6 444.383 2038.15 441.956C2044.34 441.322 2050.73 443.197 2053.74 446.879H2053.75ZM1974.5 540.37C1973.55 545.443 1974.96 545.198 1970.39 547.885C1965.9 546.507 1963.5 541.665 1963 537.513L1961.59 554.349C1964.84 557.827 1969.91 558.959 1967.18 564.789C1963.35 568.117 1962.71 565.389 1958.24 567.278C1954.3 568.942 1949.43 578.489 1934.04 568.799C1929.47 565.921 1929.83 568.744 1927.5 563.923C1924.39 557.493 1929.03 559.954 1922.21 557.827C1918.3 556.606 1917.67 557.438 1915.88 552.501C1914.06 547.469 1914.43 547.66 1915.95 543.704L1924.37 529.002C1924.58 528.791 1930.07 525.361 1931.52 524.57C1941.73 519.005 1942.57 534.458 1953.25 530.393C1963.83 526.37 1960.8 527.638 1964.55 536.217C1967.56 530.393 1969.03 525.579 1975.93 530.168C1976.43 534.389 1975.24 536.408 1974.51 540.377L1974.5 540.37ZM2114.36 413.506C2098.45 417.284 2111.35 430.841 2107.27 440.838C2105.02 446.347 2101.98 451.1 2108.2 455.506C2113.71 454.251 2116.44 446.866 2119.52 443.02C2127.95 441.676 2128.53 443.79 2135.99 439.74C2141.39 436.801 2153.66 437.667 2146.58 425.263C2144.61 421.812 2145.17 422.276 2143.38 418.13C2139.05 408.119 2126.06 410.711 2114.36 413.493V413.506ZM2284.94 414.086C2290.24 409.122 2296.13 412.777 2297.35 419.18C2299.17 428.699 2294.38 430.691 2290.64 434.762C2286.93 438.792 2285.69 444.452 2278.38 443.77C2276.29 440.558 2275.23 434.721 2274.26 430.431C2273.09 437.946 2277.35 447.5 2273.21 453.985C2264.91 453.494 2262.25 432.845 2265.39 424.383C2269.75 422.937 2268.63 423.033 2273 425.147C2274.84 414.713 2274.22 424.124 2284.94 414.079V414.086ZM2004.85 527.863C1997.35 519.251 1992.86 530.564 1992.74 530.748C1989.11 536.394 1983.68 535.61 1987.21 544.339C1981.33 545.314 1979.06 548.389 1977.19 554.329C1975.26 560.473 1978.05 564.585 1983.02 566.03C1987.34 563.371 1987.48 559.9 1990.11 555.624C1994.2 548.976 1991.02 547.434 1987.29 543.854C1997.99 542.941 1992.03 544.495 1996.66 551.84C2001.11 551.287 1999.98 550.38 2003.26 548.144C2008.48 544.584 2013.9 545.123 2008.75 535.542C2007.36 532.951 2006.44 529.698 2004.85 527.87V527.863ZM2000.75 390.642C2000.01 396.118 2002.66 394.549 2004.49 399.589C2006.39 404.826 2009.7 412.899 2017.63 413.015C2022.32 403.073 2013.19 394.099 2011.27 389.189C2006.76 377.713 2001.33 386.359 2000.75 390.642ZM2018.14 551.424C2020.3 554.71 2021.68 557.697 2019.89 561.08C2017.59 565.969 2019.75 562.348 2014.73 565.389C2010.11 568.185 2014.21 568.158 2008.29 568.192C2005.02 564.837 2006 566.358 2005.4 560.677C1999.62 560.241 1998.98 561.005 1996.08 557.65C1996.96 553.088 1999.46 552.59 2004.79 551.881C2009.27 551.287 2013.62 550.135 2018.15 551.424H2018.14ZM1790.47 536.006C1802.47 534.471 1791.98 560.507 1791.24 561.291C1784.87 561.223 1786.8 558.809 1781.67 556.886C1776.62 554.99 1776.48 557.656 1773.42 552.91C1774.13 547.564 1776.38 549.221 1777.67 545.696C1778.53 543.329 1777.28 541.174 1778.76 537.335L1790.47 536.006H1790.47ZM1986.57 573.975C1981.27 573.354 1982.71 573.3 1978.39 575.277C1977.45 571.786 1978.03 571.84 1975.17 570.238C1969.06 566.828 1955.82 567.919 1963.3 576.286C1968.1 581.667 1971.15 578.196 1976.59 580.378C1979.74 581.639 1983.41 586.883 1988.61 584.203C1990.95 580.501 1988.51 576.989 1986.58 573.968L1986.57 573.975ZM1699.12 378.695C1710.62 377.501 1713.73 383.161 1707.12 390.894C1702.53 391.815 1694.72 391.324 1693.24 388.221C1691.53 384.655 1697.92 379.827 1699.12 378.695ZM1595.56 438.676C1600.01 436.085 1603.18 441.642 1601.9 447.418C1599.69 457.483 1574.33 458.424 1584.91 446.804L1595.56 438.676ZM1599.45 471.415C1600.11 471.346 1613.97 476.727 1603.14 484.576C1597.78 488.456 1586.9 487.003 1585.82 478.547C1589.71 475.765 1589.27 477.395 1593.37 475.942C1598.72 474.047 1594.4 474.122 1599.45 471.415ZM1498.73 524.249L1499.66 528.034C1498.9 527.782 1495.63 526.807 1495.16 526.588C1490.96 524.556 1493.72 525.879 1491.98 524.093L1498.74 524.256L1498.73 524.249Z" fill="#D6D6D6"></path>
     </symbol>
-    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 23" id="download">
+    <symbol fill="none" viewBox="0 0 17 23" id="download">
         <g id="Frame 48096529">
             <path id="Vector 1" d="M2.44458 11.1123L8.25014 15.3901L14.0557 11.1123" stroke="CurrentColor" stroke-width="2" stroke-linecap="round"></path>
             <path id="Line 12" d="M9.25 3.77854C9.25 3.22625 8.80228 2.77854 8.25 2.77854C7.69772 2.77854 7.25 3.22625 7.25 3.77854H9.25ZM9.25 15.3896V3.77854H7.25L7.25 15.3896H9.25Z" fill="CurrentColor"></path>
             <path id="Line 13" d="M2.44458 19.668L14.0557 19.668" stroke="CurrentColor" stroke-width="2" stroke-linecap="round"></path>
         </g>
+    </symbol>
+    <symbol fill="none" viewBox="0 0 15 15" id="dropdown-arrow">
+        <path d="M13.4662 4.96364C13.2904 4.78788 13.052 4.68915 12.8034 4.68915C12.5548 4.68915 12.3164 4.78788 12.1406 4.96364L7.49998 9.60426L2.85936 4.96364C2.68255 4.79286 2.44573 4.69837 2.19992 4.70051C1.95411 4.70264 1.71897 4.80124 1.54515 4.97506C1.37133 5.14888 1.27274 5.38401 1.2706 5.62982C1.26847 5.87563 1.36296 6.11245 1.53373 6.28926L6.83717 11.5927C7.01298 11.7685 7.25139 11.8672 7.49998 11.8672C7.74858 11.8672 7.98699 11.7685 8.1628 11.5927L13.4662 6.28926C13.642 6.11346 13.7407 5.87504 13.7407 5.62645C13.7407 5.37786 13.642 5.13945 13.4662 4.96364Z" fill="CurrentColor"></path>
     </symbol>
 </svg>
 

@@ -2,9 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8edc075d-7adc-4d39-93b5-143941915220" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/img/camera-btn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/directions/Design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/directions/civil-objects.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/directions/general.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/directions/metal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/directions/oil-and-gas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/dropdown-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/map-testsvg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/projects/apartment-standard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/projects/lahtacentr-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/projects/military-standard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/projects/popup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/projects/rublevo-uspenski-standard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/projects/temple-standard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/projects/trout-farm-standard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/projects/trout-farm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/works1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/works2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/works3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/works4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/works5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/works6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/works7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/works/works8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-camera.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-cameras.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-contractor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vars.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/vars.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page-about.html" beforeDir="false" afterPath="$PROJECT_DIR$/page-about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-directions.html" beforeDir="false" afterPath="$PROJECT_DIR$/page-directions.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +85,10 @@
     &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/projects/prosto&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/projects/Lenmetstroi&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -73,7 +110,15 @@
       <workItem from="1693646770803" duration="9099000" />
       <workItem from="1693724592525" duration="6354000" />
       <workItem from="1693734982284" duration="722000" />
-      <workItem from="1693735711126" duration="15737000" />
+      <workItem from="1693735711126" duration="23237000" />
+      <workItem from="1693898715949" duration="10848000" />
+      <workItem from="1693976990072" duration="7596000" />
+      <workItem from="1694014028702" duration="1209000" />
+      <workItem from="1694150628327" duration="34213000" />
+      <workItem from="1694276669141" duration="17000" />
+      <workItem from="1694329603972" duration="18740000" />
+      <workItem from="1694494640230" duration="14951000" />
+      <workItem from="1694516190870" duration="11650000" />
     </task>
     <servers />
   </component>
