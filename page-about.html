@@ -70,7 +70,7 @@
   </div>
 </div>
 <main id="content">
-  <section class="section about">
+  <section class="section about" id="about">
     <div class="container">
       <div class="about__numbers numbers">
         <div class="about__numbers-info">
@@ -98,7 +98,7 @@
     </div>
   </section>
   <img src="./img/flag.jpg" width="1917" height="1000" alt="Флаг" class="full-img">
-  <section class="section directions">
+  <section class="section directions" id="directions">
     <div class="container">
       <h2 class="section__title">Направления деятельности</h2>
       <div class="directions__accordion">
@@ -199,7 +199,7 @@
       </div>
     </div>
   </section>
-  <section class="section partners">
+  <section class="section partners" id="partners">
     <div class="container">
       <h2 class="section__title text_right">Работаем с сильными партнерами</h2>
       <ul class="partners__list">
@@ -303,7 +303,7 @@
     </div>
   </section>
   <img src="./img/Embankment.jpg" width="1920" height="1000" alt="Набережная" class="full-img">
-  <section class="section values">
+  <section class="section values" id="values">
     <div class="container">
       <h2 class="section__title">Наши корпоративные <br /> ценности задают <br /> вектор развития <br /> компании</h2>
       <ul class="values__list">
@@ -346,7 +346,7 @@
       </ul>
     </div>
   </section>
-  <section class="section dynamics">
+  <section class="section dynamics" id="dynamics">
     <div class="container">
       <h2 class="section__title">Динамика роста прибыли</h2>
       <ul class="diagram__list">
@@ -383,7 +383,7 @@
       </ul>
     </div>
   </section>
-  <section class="section letters">
+  <section class="section letters" id="letters">
     <div class="container">
       <h2 class="section__title">Благодарственные письма</h2>
       <div class="slider-wrapper">
@@ -438,7 +438,7 @@
       </div>
     </div>
   </section>
-  <section class="section documents">
+  <section class="section documents" id="documents">
     <div class="container">
       <h2 class="section__title">Документы</h2>
       <div class="documents-wrapper">
@@ -496,6 +496,11 @@
     <div class="footer__info">
       <div class="footer__logo">
         <p>Ленметрострой</p>
+        <a href="./index.html">
+          <svg>
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
       </div>
       <p class="footer__address">190103, город Санкт-Петербург, </br> наб Обводного Канала, д. 191 </br> литера А, офис 36</p>
       <div class="footer__contacts">
@@ -503,90 +508,90 @@
         <a href="mailto:info@lmc.ru">info@lmc.ru</a>
       </div>
       <div class="footer__copyright">
-        <span>2012-2023. Все права защищены</span>
+        <span>2012-2023. <br /> Все права защищены</span>
       </div>
     </div>
     <nav class="footer__nav">
       <ul class="footer__nav-list">
         <li class="footer__nav-block">
-          <a href="#!" class="footer__nav-title">Главная</a>
+          <a href="./index.html" class="footer__nav-title">Главная</a>
           <ul>
             <li>
-              <a href="#!" class="footer__nav-link">О нас</a>
+              <a href="./index.html#about" class="footer__nav-link">О нас</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Ключевые проекты</a>
+              <a href="./index.html#projects" class="footer__nav-link">Ключевые проекты</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Направления деятельности</a>
+              <a href="./index.html#directions" class="footer__nav-link">Направления деятельности</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">География и показатели</a>
+              <a href="./index.html#map" class="footer__nav-link">География и показатели</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Благодарственные письма</a>
+              <a href="./index.html#letters" class="footer__nav-link">Благодарственные письма</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Партнеры</a>
+              <a href="./index.html#partners" class="footer__nav-link">Партнеры</a>
             </li>
           </ul>
         </li>
         <li class="footer__nav-block">
-          <a href="#!" class="footer__nav-title">О Компании</a>
+          <a href="./page-about.html" class="footer__nav-title">О Компании</a>
           <ul>
             <li>
-              <a href="#!" class="footer__nav-link">Руководство</a>
+              <a href="#about" class="footer__nav-link">Руководство</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Направления деятельности</a>
+              <a href="#directions" class="footer__nav-link">Направления деятельности</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Партнеры</a>
+              <a href="#partners" class="footer__nav-link">Партнеры</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Ценности</a>
+              <a href="#values" class="footer__nav-link">Ценности</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Динамика</a>
+              <a href="#dynamics" class="footer__nav-link">Динамика</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Благодарственные письма</a>
+              <a href="#letters" class="footer__nav-link">Благодарственные письма</a>
             </li>
           </ul>
         </li>
         <li class="footer__nav-block">
-          <a href="#!" class="footer__nav-title">Направления</a>
+          <a href="./page-directions.html" class="footer__nav-title">Направления</a>
           <ul>
             <li>
-              <a href="#!" class="footer__nav-link">Генеральные подрядчики</a>
+              <a href="./page-directions.html#contractors" class="footer__nav-link">Генеральные подрядчики</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Проектирование</a>
+              <a href="./page-directions.html#design" class="footer__nav-link">Проектирование</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Изготовление <br /> металлоконструкций</a>
+              <a href="./page-directions.html#metal" class="footer__nav-link">Изготовление <br /> металлоконструкций</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Гржданские и жилищные <br /> объекты</a>
+              <a href="./page-directions.html#objects" class="footer__nav-link">Гржданские и жилищные <br /> объекты</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-link">Нефтегазовая <br /> промышленность</a>
+              <a href="./page-directions.html#industry" class="footer__nav-link">Нефтегазовая <br /> промышленность</a>
             </li>
           </ul>
         </li>
         <li class="footer__nav-block footer__nav-block_last">
           <ul>
             <li>
-              <a href="#!" class="footer__nav-title">Проекты</a>
+              <a href="./page-projects.html" class="footer__nav-title">Проекты</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-title">Подрядчикам</a>
+              <a href="./page-contractor.html" class="footer__nav-title">Подрядчикам</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-title">Контакты</a>
+              <a href="./page-contacts.html" class="footer__nav-title">Контакты</a>
             </li>
             <li>
-              <a href="#!" class="footer__nav-title">камеры</a>
+              <a href="./page-cameras.html" class="footer__nav-title">Камеры</a>
             </li>
           </ul>
         </li>
@@ -778,6 +783,7 @@
   </symbol>
 </svg>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
 </body>

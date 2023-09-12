@@ -793,6 +793,7 @@
 }
 .cta textarea.form__input {
     margin-bottom: 67px;
+    font-size: 18px;
 }
 .form__button {
     display: flex;
@@ -1412,6 +1413,9 @@
     line-height: normal;
     margin-bottom: 20px;
 }
+.footer__logo a {
+    display: none;
+}
 .footer__contacts {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -1426,6 +1430,9 @@
 }
 .footer__copyright {
     font-size: 14px;
+}
+.footer__copyright br {
+    display: none;
 }
 .footer__nav-list {
     display: flex;
@@ -2172,6 +2179,15 @@
     .chips__btn {
         font-size: 13px;
     }
+    .footer__nav-block {
+        width: 50%;
+    }
+    .footer__info {
+        margin-right: 120px;
+    }
+    .footer__nav-block:first-of-type {
+        margin-bottom: 25px;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -2624,6 +2640,9 @@
     .projects-standard__slider_mobile .swiper-slide {
         margin-right: 0;
     }
+    .footer__info {
+        margin-right: 70px;
+    }
 }
 
 
@@ -2751,6 +2770,51 @@
         height: 380px;
         object-fit: cover;
         object-position: center;
+    }
+    .footer__logo a {
+        display: block;
+        transition: all .2s linear;
+    }
+    .footer__logo a:hover {
+        color: var(--text-light-blue);
+    }
+    .footer__logo a svg {
+        width: 108px;
+        height: 91px;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer__logo p {
+        display: none;
+    }
+    .footer__nav {
+        display: none;
+    }
+    .footer__info {
+        margin: 0 auto;
+    }
+    .footer__address {
+        text-align: center;
+    }
+    .footer__contacts a {
+        text-align: center;
+    }
+    .footer__contacts a:first-of-type {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    .footer__contacts {
+        margin: 33px 0;
+    }
+    .footer {
+        padding: 40px 0 45px 0;
+    }
+    .footer__copyright br {
+        display: block;
+    }
+    .footer__copyright {
+        text-align: center;
     }
 }
 
