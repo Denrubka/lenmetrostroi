@@ -630,6 +630,9 @@
     transition: all .2s linear;
     cursor: pointer;
 }
+.map__circle:hover {
+    color: var(--text-light-blue);
+}
 .map__circle.active {
     color: var(--text-light-blue);
 }
